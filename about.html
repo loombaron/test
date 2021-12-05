@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/8e91a27638.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Page 1 (Intro) -->
+    <section id="page-1" class="page">
+        <div>
+            <a href="index.html" id="btn">Home</a>
+        </div>
+        <br>
+        <br>
+        <h1>Welcome To Karabel Media</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nemo non unde tenetur voluptatum illum modi rem
+            pariatur nam perferendis, facilis corporis at nihil accusamus assumenda sint tempora quos dicta! Neque, ea.
+            Earum, quia tempora optio, quos ex vitae sequi adipisci enim voluptatum mollitia ipsam quaerat suscipit
+            repellat est blanditiis.</p>
+        <div>
+            <a href="#page-2" class="btn">Down
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Page 2 (Intro) -->
+    <section id="page-2" class="page">
+        <h1>Page 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nemo non unde tenetur voluptatum illum modi rem
+            pariatur nam perferendis, facilis corporis at nihil accusamus assumenda sint tempora quos dicta! Neque, ea.
+            Earum, quia tempora optio, quos ex vitae sequi adipisci enim voluptatum mollitia ipsam quaerat suscipit
+            repellat est blanditiis.</p>
+        <div>
+            <a href="#page-1" class="btn btn-dark">Up
+                <i class="fas fa-arrow-up"></i>
+            </a>
+            <a href="#page-3" class="btn">Down
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Page 3 (Intro) -->
+    <section id="page-3" class="page">
+        <h1>Page 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nemo non unde tenetur voluptatum illum modi rem
+            pariatur nam perferendis, facilis corporis at nihil accusamus assumenda sint tempora quos dicta! Neque, ea.
+            Earum, quia tempora optio, quos ex vitae sequi adipisci enim voluptatum mollitia ipsam quaerat suscipit
+            repellat est blanditiis.</p>
+        <div>
+            <a href="#page-2" class="btn btn-dark">Up
+                <i class="fas fa-arrow-up"></i>
+            </a>
+            <a href="#page-4" class="btn">Down
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Page 4 (Intro) -->
+    <section id="page-4" class="page">
+        <h1>Page 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nemo non unde tenetur voluptatum illum modi rem
+            pariatur nam perferendis, facilis corporis at nihil accusamus assumenda sint tempora quos dicta! Neque, ea.
+            Earum, quia tempora optio, quos ex vitae sequi adipisci enim voluptatum mollitia ipsam quaerat suscipit
+            repellat est blanditiis.</p>
+        <div>
+            <a href="#page-3" class="btn btn-dark">Up
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        //Smooth Scrolling
+        $('.btn').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top
+                    },
+                    400
+                );
+            }
+        });
+    </script>
+
+</body>
+
+</html>
