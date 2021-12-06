@@ -262,9 +262,16 @@ h1, h2 {
 
 @media(max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         height: 120px;
         padding: 20px;
+        z-index: 2;
+    }
+
+    #navbar img {
+        margin-top: 1 px;
+        width: 50%;
+        align-items: center;
     }
 
     .navbar a {
