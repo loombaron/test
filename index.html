@@ -20,22 +20,6 @@
 
         gtag('config', 'AW-938058028');
     </script>
-    <!-- Event snippet for Contact Form conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-938058028/N7V1CMvi04UDEKzCpr8D',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +42,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <!-- <span class="text-primary"><i class="fas fa-book-open"></i>KARABEL</span>MEDIA -->
             <nav>
                 <ul>
-                    <li><a href="about.html">About</a></li>
+                    <li><a onclick="return gtag_report_conversion('https://karabelmedia.com/about.html');" href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                 </ul>
             </nav>
