@@ -1,5 +1,5 @@
 :root {
-  --page-1-color: url("../imagenes/ima1.png") no-repeat center center/cover;
+  --page-1-color: rgb(1, 102, 13);
   --page-2-color: blue;
   --page-3-color: teal;
   --page-4-color: purple;
@@ -32,9 +32,9 @@ body {
 
 .page {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100vh;
-  align-items: bottom;
+  align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 4rem;
@@ -60,7 +60,7 @@ body {
   margin-top: 0.5rem;
   font-size: 1rem;
   transition: all 0.3s ease-in;
-  border-radius: 150%;
+  border-radius: 10%;
 }
 
 .btn {
@@ -73,7 +73,7 @@ body {
   margin-top: 1rem;
   font-size: 1.1rem;
   transition: all 0.3s ease-in;
-  border-radius: 80%;
+  border-radius: 5%;
 }
 
 .btn:hover,
@@ -113,3 +113,9 @@ body {
     transform: translateX(0);
   }
 }
+
+@media (max-width: 768px) {
+  .page h1  {
+    font-size: 40px;
+
+  }
