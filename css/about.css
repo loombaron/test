@@ -101,6 +101,18 @@ body {
   animation: text var(--animate-speed) forwards ease-in 1s;
 }
 
+.page .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container img {
+  width: 80%;
+}
+
 /* Keyframes */
 @keyframes heading {
   to {
@@ -111,6 +123,12 @@ body {
 @keyframes text {
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes img {
+  to {
+    transform: translateY(0);
   }
 }
 
