@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Global site tag (gtag.js) - Google Ads: 938058028 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-938058028"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+    
+            gtag('config', 'AW-938058028');
+        </script>
+       <!-- Event snippet for Test_karabel_media_about conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-938058028/lHE8CIbBnIoDEKzCpr8D',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>    
+    <script src="https://kit.fontawesome.com/8e91a27638.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/services.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Page 1 (Intro) -->
+    <section id="page-1" class="page">
+        <div class="container"></div>
+        <div>
+            <a href="index.html" id="btn">Home</a>
+        </div>
+         <h1>CAMPAÑAS CON ALTO RENDIMIENTO</h1>
+         <p>Nos focalizamos en realizar campañas que generen resultados</p>
+            <a href="#page-2" class="btn">Down
+                <i class="fas fa-arrow-down"></i>
+            </a>    
+        </div>
+    </section>
+    <!-- Page 2 (Intro) -->
+    <section id="page-2" class="page">
+        <h1>BAJO PRESUPUESTO</h1>
+        <p>Menos inversióm, más retorno a la inversión</p>
+        <div>
+            <a href="#page-1" class="btn btn-dark">Up
+                <i class="fas fa-arrow-up"></i>
+            </a>
+            <a href="#page-3" class="btn">Down
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Page 3 (Intro) -->
+    <section id="page-3" class="page">
+        <h1>SEGUIMIENTO DE CAMPAÑAS</h1>
+        <p>Monitoreo de resultados, envío de reportes</p>
+        <div>
+            <a href="#page-2" class="btn btn-dark">Up
+                <i class="fas fa-arrow-up"></i>
+            </a>
+            <a href="#page-4" class="btn">Down
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+    <!-- Page 4 (Intro) -->
+    <section id="page-4" class="page">
+        <h1>OPTIMIZACION</h1>
+        <p>Optimización de campañas en base a los resultados</p>
+        <div>
+            <a href="#page-3" class="btn btn-dark">Up
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        //Smooth Scrolling
+        $('.btn').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top
+                    },
+                    400
+                );
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+
